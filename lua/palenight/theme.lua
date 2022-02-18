@@ -127,6 +127,7 @@ end
 
 theme.loadTreeSitter = function ()
   local hl = {
+    TSAttribute       = { fg = color.orange },
     TSBoolean         = { fg = color.orange }, -- For booleans.
     TSComment         = { fg = color.comments }, -- For all numbers
     TSConditional     = { fg = color.purple }, -- For all numbers
@@ -145,6 +146,7 @@ theme.loadTreeSitter = function ()
     TSKeywordOperator = { fg = color.purple }, -- For all numbers
     TSMethod          = { fg = color.blue }, -- For all numbers
     TSNumber          = { fg = color.orange }, -- For all numbers
+    TSNamespace       = { fg = color.orange },
     TSOperator        = { fg = color.cyan }, -- For any operator: `+`, but also `->` and `*` in C.
     TSParameter       = { fg = color.red }, -- For parameters of a function.
     TSProperty        = { fg = color.fg }, -- Same as `TSField`,accesing for struct members in C.
