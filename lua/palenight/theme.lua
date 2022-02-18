@@ -157,6 +157,9 @@ theme.loadTreeSitter = function ()
     TSTagAttribute    = { fg = color.purple }, -- Tags like html tag names.
     TSTagDelimiter    = { fg = color.cyan }, -- Tag delimiter like `<` `>` `/`
     TSTag             = { fg = color.pink }, -- Tags like themelhtml tag names.
+    TSTitle           = { fg = color.yellow },
+    TSTextReference   = { fg = color.blue },
+    TSURI             = { fg = color.orange, style = 'underline' },
     TSTypeBuiltin     = { fg = color.purple }, -- For builtin types.
     TSType            = { fg = color.yellow }, -- For types.
     TSUnderline       = { fg = color.none, bg = color.none, style = 'underline' }, -- For text to be represented with an underline.
@@ -215,32 +218,6 @@ theme.loadPlugins = function()
     gitcommitSummary        = { fg = color.blue },
     gitcommitUnmerged       = { fg = color.green },
     gitcommitUnmergedFile   = { fg = color.yellow },
-
-    -- markdown
-    markdownH1              = { fg = color.yellow, style = "bold" },
-    markdownH2              = { fg = color.yellow, style = "bold" },
-    markdownH3              = { fg = color.yellow, style = "bold" },
-    markdownH4              = { fg = color.yellow, style = "bold" },
-    markdownH5              = { fg = color.yellow, style = "bold" },
-    markdownH6              = { fg = color.yellow, style = "bold" },
-    markdownH1Delimiter     = { fg = color.green },
-    markdownH2Delimiter     = { fg = color.green },
-    markdownH3Delimiter     = { fg = color.green },
-    markdownH4Delimiter     = { fg = color.green },
-    markdownH5Delimiter     = { fg = color.green },
-    markdownH6Delimiter     = { fg = color.green },
-    markdownBoldDelimiter   = { fg = color.comments, style = "bold" },
-    markdownItalicDelimiter = { fg = color.cyan },
-    markdownBlockquote      = { fg = color.cyan },
-    markdownListMarker      = { fg = color.cyan },
-
-    -- html
-    htmlH1                  = { fg = color.cyan, style = "bold" },
-    htmlH2                  = { fg = color.red, style = "bold" },
-    htmlH3                  = { fg = color.green, style = "bold" },
-    htmlH4                  = { fg = color.yellow, style = "bold" },
-    htmlH5                  = { fg = color.purple, style = "bold" },
-    htmlLink                = { fg = color.link, style = "underline" },
 
     -- nvim-cmp
     CmpDocumentation      = { fg = color.fg, bg = color.bg },
