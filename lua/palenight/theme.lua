@@ -146,7 +146,7 @@ theme.loadTreeSitter = function ()
     TSKeywordOperator = { fg = color.purple }, -- For all numbers
     TSMethod          = { fg = color.blue }, -- For all numbers
     TSNumber          = { fg = color.orange }, -- For all numbers
-    TSNamespace       = { fg = color.orange },
+    TSNamespace       = { fg = color.yellow },
     TSOperator        = { fg = color.cyan }, -- For any operator: `+`, but also `->` and `*` in C.
     TSParameter       = { fg = color.red }, -- For parameters of a function.
     TSProperty        = { fg = color.fg }, -- Same as `TSField`,accesing for struct members in C.
