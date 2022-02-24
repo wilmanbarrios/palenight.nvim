@@ -137,6 +137,7 @@ theme.loadTreeSitter = function ()
     TSConstructor     = { fg = color.yellow }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
     TSCurrentScope    = { fg = color.none, bg = color.selection },
     TSDefinition      = { fg = color.none, bg = color.selection },
+    TSEmphasis        = { fg = color.pink, style = 'italic' },
     TSError           = { fg = color.red }, -- For syntax/parser errors.
     TSException       = { fg = color.purple }, -- For exception related keywords.
     TSFloat           = { fg = color.orange }, -- For floats.
@@ -144,9 +145,10 @@ theme.loadTreeSitter = function ()
     TSInclude         = { fg = color.purple }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
     TSKeyword         = { fg = color.purple }, -- For all numbers
     TSKeywordOperator = { fg = color.purple }, -- For all numbers
+    TSLiteral         = { fg = color.comments },
     TSMethod          = { fg = color.blue }, -- For all numbers
-    TSNumber          = { fg = color.orange }, -- For all numbers
     TSNamespace       = { fg = color.yellow },
+    TSNumber          = { fg = color.orange }, -- For all numbers
     TSOperator        = { fg = color.cyan }, -- For any operator: `+`, but also `->` and `*` in C.
     TSParameter       = { fg = color.red }, -- For parameters of a function.
     TSProperty        = { fg = color.fg }, -- Same as `TSField`,accesing for struct members in C.
@@ -154,17 +156,19 @@ theme.loadTreeSitter = function ()
     TSPunctDelimiter  = { fg = color.cyan }, -- For delimiters ie: `.`
     TSPunctSpecial    = { fg = color.cyan }, -- For special punctutation that does not fall in the catagories before.
     TSString          = { fg = color.green }, -- For strings.
+    TSStringEscape    = { fg = color.cyan },
+    TSStrong          = { fg = color.pink },
+    TSTag             = { fg = color.pink }, -- Tags like themelhtml tag names.
     TSTagAttribute    = { fg = color.purple }, -- Tags like html tag names.
     TSTagDelimiter    = { fg = color.cyan }, -- Tag delimiter like `<` `>` `/`
-    TSTag             = { fg = color.pink }, -- Tags like themelhtml tag names.
-    TSTitle           = { fg = color.yellow },
     TSTextReference   = { fg = color.blue },
-    TSURI             = { fg = color.orange, style = 'underline' },
-    TSTypeBuiltin     = { fg = color.purple }, -- For builtin types.
+    TSTitle           = { fg = color.yellow },
     TSType            = { fg = color.yellow }, -- For types.
+    TSTypeBuiltin     = { fg = color.purple }, -- For builtin types.
     TSUnderline       = { fg = color.none, bg = color.none, style = 'underline' }, -- For text to be represented with an underline.
-    TSVariableBuiltin = { fg = color.red }, -- For all numbers
+    TSURI             = { fg = color.orange, style = 'underline' },
     TSVariable        = { fg = color.fg }, -- For all numbers
+    TSVariableBuiltin = { fg = color.red }, -- For all numbers
     TSWarning         = { fg = color.orange }, -- For all numbers
   }
 
