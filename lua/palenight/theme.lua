@@ -170,6 +170,9 @@ theme.loadTreeSitter = function ()
     TSVariable        = { fg = color.fg }, -- For all numbers
     TSVariableBuiltin = { fg = color.red }, -- For all numbers
     TSWarning         = { fg = color.orange }, -- For all numbers
+
+    -- vue
+    vueTSMethod       = { fg = color.purple },
   }
 
   return hl
