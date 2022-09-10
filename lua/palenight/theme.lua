@@ -14,7 +14,7 @@ theme.loadEditor = function ()
 		CursorLineNr      = { fg = color.paleblue }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
 		DiffAdd           = { fg = color.green, bg = color.none, style = 'reverse' }, -- diff mode: Added line
 		DiffChange        = { fg = color.yellow, bg = color.none, style = 'reverse' }, --  diff mode: Changed line
-		DiffDelete        = { fg = color.red, bg = color.none, style = 'reverse' }, -- diff mode: Deleted line
+		DiffDelete        = { fg = color.pink, bg = color.none, style = 'reverse' }, -- diff mode: Deleted line
 		DiffText          = { fg = color.orange, bg = color.none, style = 'reverse' }, -- diff mode: Changed text within a changed line
 		Directory         = { fg = color.blue, bg = color.none }, -- directory names (and other special names in listings)
 		ErrorMsg          = { fg = color.error }, -- error messages
