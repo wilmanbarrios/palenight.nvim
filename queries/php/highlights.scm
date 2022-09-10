@@ -3,7 +3,8 @@
     (name) @constant.builtin
         (#eq? @constant.builtin "class"))
 
-; name arguments php8
-(argument (name) @constructor)
-
 "$" @punctuation.delimiter
+
+; FooBar::$baz
+(scoped_property_access_expression
+    scope: (name) @type)
