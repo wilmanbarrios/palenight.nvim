@@ -1,1 +1,1 @@
-lua require('palenight.util').set()
+lua require('palenight').set()
